@@ -1,2 +1,4 @@
+# Deploy repo: compiled artifacts only (wheel, app.yml, start.sh, uv.lock).
+# Source lives on github.com/databricks-solutions/solution-builder (main).
 __pycache__/
 *.py[cod]

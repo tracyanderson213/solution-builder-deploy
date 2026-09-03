@@ -390,8 +390,8 @@ wheels = [
 
 [[package]]
 name = "demo-prompt-generator"
-version = "0.1.0.dev20260903115816"
-source = { path = "demo_prompt_generator-0.1.0.dev20260903115816-py3-none-any.whl" }
+version = "0.1.0.dev20260903121322"
+source = { path = "demo_prompt_generator-0.1.0.dev20260903121322-py3-none-any.whl" }
 dependencies = [
     { name = "alembic" },
     { name = "claude-agent-sdk" },
@@ -431,7 +431,7 @@ dependencies = [
     { name = "zstandard" },
 ]
 wheels = [
-    { filename = "demo_prompt_generator-0.1.0.dev20260903115816-py3-none-any.whl", hash = "sha256:80fce55c359160eb362cc679f3b1c773233a59a72ebdb2e1f5654b5bd9cb21fb" },
+    { filename = "demo_prompt_generator-0.1.0.dev20260903121322-py3-none-any.whl", hash = "sha256:0ac0d80b81cdbdf877fe2715cfd3457591d4c1234a88a4b57389442eab9ab986" },
 ]
 
 [package.metadata]
@@ -483,7 +483,7 @@ dependencies = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "demo-prompt-generator", path = "demo_prompt_generator-0.1.0.dev20260903115816-py3-none-any.whl" }]
+requires-dist = [{ name = "demo-prompt-generator", path = "demo_prompt_generator-0.1.0.dev20260903121322-py3-none-any.whl" }]
 
 [[package]]
 name = "diff-cover"

@@ -19,4 +19,4 @@ env:
   - name: "ENABLE_LOGO_BY_DEFAULT"
     value: "true"
   - name: "LAKEBASE_DATABASE_PATH"
-    value: "projects/solution-builder-natraining/branches/br-patient-frost-e94y4vtt/databases/solution_builder_staging"
+    value: "projects/solution-builder-natraining/branches/production/databases/solution_builder_staging"

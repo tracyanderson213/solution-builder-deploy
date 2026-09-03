@@ -13,4 +13,4 @@ dependencies = [
 # alongside this pyproject.toml. uv requires `file:` URLs for path deps in
 # [tool.uv.sources]; the leading "./" makes it relative to this file.
 [tool.uv.sources]
-demo-prompt-generator = { path = "./demo_prompt_generator-0.1.0.dev20260903122042-py3-none-any.whl" }
+demo-prompt-generator = { path = "./demo_prompt_generator-0.1.0.dev20260903124705-py3-none-any.whl" }

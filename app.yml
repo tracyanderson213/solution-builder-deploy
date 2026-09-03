@@ -13,7 +13,7 @@ env:
   - name: "ANTHROPIC_BASE_PATH"
     value: "serving-endpoints/anthropic"
   - name: "ANTHROPIC_LLM_ENDPOINT"
-    value: "databricks-claude-sonnet-4-8"
+    value: "databricks-claude-sonnet-4-5"
   - name: "DEFAULT_CATALOG"
     value: "ai_demo_gen"
   - name: "ENABLE_LOGO_BY_DEFAULT"

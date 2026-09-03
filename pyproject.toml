@@ -1,0 +1,16 @@
+[project]
+name = "demo-prompt-generator-deploy"
+version = "0.0.0"
+# Pin the runtime to Python 3.12. Without this Apps' uv install picks 3.11
+# (its hardcoded default for older lockfiles); 3.11 is fine but a few of our
+# transitive deps ship 3.12-only optimisations and we want to track main.
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "demo-prompt-generator",
+]
+
+# Tell uv to satisfy demo-prompt-generator from the local wheel that ships
+# alongside this pyproject.toml. uv requires `file:` URLs for path deps in
+# [tool.uv.sources]; the leading "./" makes it relative to this file.
+[tool.uv.sources]
+demo-prompt-generator = { path = "./demo_prompt_generator-0.1.0.dev20260903115816-py3-none-any.whl" }

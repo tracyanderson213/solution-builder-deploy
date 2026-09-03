@@ -1,0 +1,22 @@
+# --workers must stay at 1: ActiveStreamManager is a per-process singleton.
+# start.sh prepends the bundled databricks CLI to PATH, then exec's uvicorn.
+# Apps' uv install path puts source under /app/deployments/<id>/ (changes
+# per deployment) and sets cwd there, so a relative path is portable.
+command: ["bash", "start.sh"]
+env:
+  - name: "AI_GATEWAY"
+    value: "databricks-claude-opus-4-7"
+  - name: "AI_GATEWAY_EMBEDDING"
+    value: "databricks-qwen3-embedding-0-6b"
+  - name: "AI_GATEWAY_MINI"
+    value: "databricks-claude-haiku-4-5"
+  - name: "ANTHROPIC_BASE_PATH"
+    value: "serving-endpoints/anthropic"
+  - name: "ANTHROPIC_LLM_ENDPOINT"
+    value: "databricks-claude-sonnet-4-8"
+  - name: "DEFAULT_CATALOG"
+    value: "ai_demo_gen"
+  - name: "ENABLE_LOGO_BY_DEFAULT"
+    value: "true"
+  - name: "LAKEBASE_DATABASE_PATH"
+    value: "projects/solution-builder-natraining/branches/br-patient-frost-e94y4vtt/databases/solution_builder_staging"

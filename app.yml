@@ -18,5 +18,7 @@ env:
     value: "ai_demo_gen"
   - name: "ENABLE_LOGO_BY_DEFAULT"
     value: "true"
+  - name: "DEMO_PROMPT_GENERATOR_TEMPLATE_ADMIN_EMAILS"
+    value: "tracy.anderson@3cloudsolutions.com,madhu.swaminathan@3cloudsolutions.com,sudhir.gullapalli@3cloudsolutions.com"
   - name: "LAKEBASE_DATABASE_PATH"
     value: "projects/solution-builder-natraining/branches/production/databases/solution_builder_staging"
